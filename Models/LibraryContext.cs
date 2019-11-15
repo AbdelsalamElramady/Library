@@ -8,6 +8,6 @@ namespace Library.Models
 {
     public class LibraryContext : DbContext
     {
-
+        public DbSet<Book> Books { get; set; }
     }
 }
