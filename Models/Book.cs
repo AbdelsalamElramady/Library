@@ -8,9 +8,10 @@ namespace Library.Models
 {
     public class Book
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string name { get; set; }
+        [Required]
         public int copy { get; set; }
     }
 }
