@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
 
 namespace Library
 {
@@ -12,6 +13,7 @@ namespace Library
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Models.LibraryContext>());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
