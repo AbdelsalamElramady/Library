@@ -17,7 +17,6 @@ namespace Library.Models
         public Client Client { get; set; }
         [Required]
         public DateTime borrowDate { get; set; }
-        [Required]
-        public DateTime returnDate { get; set; }
+        public DateTime? returnDate { get; set; }
     }
 }

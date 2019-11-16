@@ -12,7 +12,7 @@ namespace Library.Models
         [Required]
         public string name { get; set; }
         [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than 0")]
+        [Range(0, int.MaxValue, ErrorMessage = "Please enter a valid number")]
         public int copy { get; set; }
     }
 }

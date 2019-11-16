@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Library.Models.Book>
+
+@{
+    ViewBag.Title = "GetBooks";
+}
+
+<h2>Please choose the book</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.name)*@
+            @Html.ActionLink(item.name, "BorrowBook", "Borrow", new { clientId = ViewBag.clientId, bookId = item.Id }, null)
+        </td>
+    </tr>
+}
+
+</table>
