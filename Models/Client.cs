@@ -6,13 +6,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Library.Models
 {
-    public class Book
+    public class Client
     {
         public int Id { get; set; }
         [Required]
         public string name { get; set; }
-        [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than 0")]
-        public int copy { get; set; }
     }
 }
