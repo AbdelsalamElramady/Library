@@ -10,5 +10,6 @@ namespace Library.Models
     {
         public DbSet<Book> Books { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Borrow> Borrows { get; set; }
     }
 }

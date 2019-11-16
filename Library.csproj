@@ -134,6 +134,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Borrow.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\LibraryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
