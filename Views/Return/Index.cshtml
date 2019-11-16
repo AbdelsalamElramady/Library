@@ -1,0 +1,41 @@
+﻿@using Library.Models;
+@model IEnumerable<Borrow>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Book.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.borrowDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.borrowDate)
+        </td>
+        <td>
+            @Html.ActionLink("Return", "Return", new { id=item.Id, bookId = item.bookId })
+        </td>
+    </tr>
+}
+
+</table>
