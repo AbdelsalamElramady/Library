@@ -10,6 +10,7 @@ namespace Library.Models
     {
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Client name")]
         public string name { get; set; }
     }
 }

@@ -16,7 +16,9 @@ namespace Library.Models
         public int clientId { get; set; }
         public Client Client { get; set; }
         [Required]
+        [Display(Name = "Borrow date")]
         public DateTime borrowDate { get; set; }
+        [Display(Name = "Return date")]
         public DateTime? returnDate { get; set; }
     }
 }

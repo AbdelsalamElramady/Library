@@ -10,8 +10,10 @@ namespace Library.Models
     {
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Book name")]
         public string name { get; set; }
         [Required]
+        [Display(Name = "Copy")]
         [Range(0, int.MaxValue, ErrorMessage = "Please enter a valid number")]
         public int copy { get; set; }
     }
