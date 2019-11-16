@@ -130,6 +130,7 @@
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\BorrowController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\HistoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReturnController.cs" />
     <Compile Include="Global.asax.cs">
@@ -190,6 +191,7 @@
     <Content Include="Views\Borrow\Index.cshtml" />
     <Content Include="Views\Borrow\GetBooks.cshtml" />
     <Content Include="Views\Return\Index.cshtml" />
+    <Content Include="Views\History\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
